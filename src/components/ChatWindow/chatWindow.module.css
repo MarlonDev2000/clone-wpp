@@ -1,0 +1,121 @@
+.chatWindow {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+/* chatWindow Header */
+
+.chatWindowHeader {
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.chatWindowHeaderInfo {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.chatWindowAvatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.chatWindowName {
+  font-size: 17px;
+  color: #000;
+}
+
+.chatWindowHeaderButtons {
+  display: flex;
+  align-items: center;
+  margin-right: 15px;
+}
+
+.chatWindowHeaderBtn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all ease 0.3s;
+}
+
+/* chatWindow Body */
+
+.chatWindowBody {
+  flex: 1;
+  overflow-y: auto;
+  background-color: #efeae2;
+  padding: 20px 70px;
+}
+
+.chatWindowBody::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+.chatWindowBody::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+/* chatWindow Footer */
+
+.chatWindowFooter {
+  height: 62px;
+  display: flex;
+  align-items: center;
+}
+
+.chatWindowPre {
+  display: flex;
+  margin: 0 15px;
+}
+
+.chatWindowInputArea {
+  flex: 1;
+}
+
+.chatWindowInput {
+  width: 100%;
+  height: 40px;
+  border: 0;
+  outline: 0;
+  background-color: #fff;
+  border-radius: 8px;
+  font-size: 15px;
+  color: #4a4a4a;
+  padding-left: 15px;
+}
+
+.chatWindowPos {
+  display: flex;
+  margin: 0 15px;
+}
+
+/* chatWindow Emoji Area */
+
+.chatWindowEmojiArea {
+  height: 200px;
+  overflow-y: hidden;
+  transition: all ease 0.3s;
+}
+
+/* chatWindow Mic Area */
+
+.chatWindowMicOpen {
+  color: #00a884;
+}
+
+.chatWindowMicClose {
+  color: #919191;
+}
